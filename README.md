@@ -51,12 +51,108 @@ Student_Management/
 
 1️⃣ Clone the repository
 ```bash
-    git clone https://github.com/<your-username>/Student_Management.git
-    cd Student_Management
+git clone https://github.com/<your-username>/Student_Management.git
+cd Student_Management
+```
 
 ### 2️⃣ Install dependencies
 ```bash
 npm install express body-parser nodemon
+```
 
 3️⃣ Start the development server
+```bash
 npx nodemon
+```
+
+You should see:
+```bash
+Server running on port 3000
+```
+
+
+The server will now be running at:
+```bash
+http://localhost:3000
+```
+
+🧪 API Testing with Postman
+🔹 1. Add a Student
+
+Method: POST
+```bash
+URL: http://localhost:3000/students
+```
+Body → raw → JSON
+```bash
+{
+  "name": "Ayush",
+  "roll": 1,
+  "marks": 92
+}
+```
+
+Response
+```bash
+{
+  "message": "Student added successfully"
+}
+```
+🔹 2. Get All Students
+
+Method: GET
+```bash
+URL: http://localhost:3000/students
+```
+Response
+```bash
+[
+  {
+    "name": "Ayush",
+    "roll": 1,
+    "marks": 92
+  },
+  {
+    "name": "Riya",
+    "roll": 2,
+    "marks": 85
+  }
+]
+```
+
+🔹 3. Get Average Marks
+
+Method: GET
+```bash
+URL: http://localhost:3000/students/average
+```
+Response
+```bash
+{
+  "average": 88.5
+}
+```
+
+💡 Notes
+
+Each roll number must be unique.
+
+The data is stored in data.json.
+You can open it to view the saved student records.
+
+To reset the data, simply replace data.json content with:
+```bash
+[]
+```
+
+To change the port, modify the line in index.js:
+```bash
+const PORT = 3000;
+```
+
+🧑‍💻 Author
+
+Ayush Gupta
+
+
+Feel free to fork, improve, or extend this project!
