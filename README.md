@@ -1,4 +1,4 @@
-# Student_Management# 🎓 Student Marks Management System (Node.js + Express)
+# 🎓 Student Marks Management System (Node.js + Express)
 
 A simple **RESTful API** built using **Node.js** and **Express.js** that helps manage student records — including adding students, listing all students, and calculating their average marks.  
 This beginner-friendly project demonstrates the basics of API development using Express and JSON-based data storage.
