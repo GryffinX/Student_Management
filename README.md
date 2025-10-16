@@ -76,7 +76,8 @@ The server will now be running at:
 http://localhost:3000
 ```
 
-🧪 API Testing with Postman
+## 🧪 API Testing with Postman
+
 🔹 1. Add a Student
 
 Method: POST
